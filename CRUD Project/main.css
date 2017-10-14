@@ -1,0 +1,144 @@
+/* the styles for the HTML elements */
+html {
+    background-color: rgb(192, 192, 192);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1080px;
+    margin: 0 auto;
+	margin-bottom: 1em;
+    padding: 0 2em;
+    background-color: white;
+    border: 1px solid black;
+}
+main {
+    margin: 0;
+}
+aside {
+    float: left;
+    width: 150px;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li {
+    padding-bottom: 0.5em;
+}
+section {
+    float: left;
+    width: 500px;
+}
+footer {
+    margin: 0;
+	padding-bottom: 1em;
+    padding-top: 1.5em;
+    clear: both;
+}
+/* the styles for the other HTML elements */
+h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .25em 0 .5em;
+}
+h1, h2 {
+    color: rgb(208, 133, 4);
+}
+
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: rgb(41, 64, 124);
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(208, 133, 4);
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px dashed black;
+    padding: .2em .5em .2em .5em;
+    vertical-align: top;
+    text-align: left;
+}
+br {
+    clear: both;
+}
+th {
+	background-color: orange;
+	color: white;
+}
+/* classes */
+.right {
+    text-align: right;
+}
+.last_paragraph {
+	margin-bottom: 2em;	
+}
+.button {
+     background:none!important;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     border-bottom:1px solid #444; 
+     cursor: pointer;
+}
+input[type=submit] {
+  background: #fc7a17;
+  background-image: -webkit-linear-gradient(top, #fc7a17, #e0e014);
+  background-image: -moz-linear-gradient(top, #fc7a17, #e0e014);
+  background-image: -ms-linear-gradient(top, #fc7a17, #e0e014);
+  background-image: -o-linear-gradient(top, #fc7a17, #e0e014);
+  background-image: linear-gradient(to bottom, #fc7a17, #e0e014);
+  -webkit-border-radius: 34;
+  -moz-border-radius: 34;
+  font-family: Courier New;
+  color: #000000;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: inline;
+}
+input[type=submit]:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+/********************************************************************
+* Additional styles for the Northwind Customer application
+********************************************************************/
+#add_customer_form, #update_customer_form {
+    margin: .5em 0 1em;
+}
+#add_customer_form label, #update_customer_form label {
+    width: 6em;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    float: left;
+}
+#add_customer_form input, #update_customer_form input {
+    float: left;
+}
+#add_customer_form input[text], #update_customer_form input[text] {
+    width: 15em;
+}
